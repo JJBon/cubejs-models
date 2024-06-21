@@ -1,0 +1,251 @@
+cubes:
+  - name: stg_a_account
+    sql_table: dbt_test_project.stg_a_account
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: id
+        sql: id
+        type: string
+        primary_key: true
+
+      - name: isdeleted
+        sql: isdeleted
+        type: string
+
+      - name: masterrecordid
+        sql: masterrecordid
+        type: string
+
+      - name: name
+        sql: name
+        type: string
+
+      - name: type
+        sql: type
+        type: string
+
+      - name: parentid
+        sql: parentid
+        type: string
+
+      - name: billingstreet
+        sql: billingstreet
+        type: string
+
+      - name: billingcity
+        sql: billingcity
+        type: string
+
+      - name: billingstate
+        sql: billingstate
+        type: string
+
+      - name: billingpostalcode
+        sql: billingpostalcode
+        type: string
+
+      - name: billingcountry
+        sql: billingcountry
+        type: string
+
+      - name: billinggeocodeaccuracy
+        sql: billinggeocodeaccuracy
+        type: string
+
+      - name: shippingstreet
+        sql: shippingstreet
+        type: string
+
+      - name: shippingcity
+        sql: shippingcity
+        type: string
+
+      - name: shippingstate
+        sql: shippingstate
+        type: string
+
+      - name: shippingpostalcode
+        sql: shippingpostalcode
+        type: string
+
+      - name: shippingcountry
+        sql: shippingcountry
+        type: string
+
+      - name: shippinggeocodeaccuracy
+        sql: shippinggeocodeaccuracy
+        type: string
+
+      - name: phone
+        sql: phone
+        type: string
+
+      - name: fax
+        sql: fax
+        type: string
+
+      - name: accountnumber
+        sql: accountnumber
+        type: string
+
+      - name: website
+        sql: website
+        type: string
+
+      - name: photourl
+        sql: photourl
+        type: string
+
+      - name: sic
+        sql: sic
+        type: string
+
+      - name: industry
+        sql: industry
+        type: string
+
+      - name: ownership
+        sql: ownership
+        type: string
+
+      - name: tickersymbol
+        sql: tickersymbol
+        type: string
+
+      - name: description
+        sql: description
+        type: string
+
+      - name: rating
+        sql: rating
+        type: string
+
+      - name: site
+        sql: site
+        type: string
+
+      - name: ownerid
+        sql: ownerid
+        type: string
+
+      - name: createddate
+        sql: createddate
+        type: string
+
+      - name: createdbyid
+        sql: createdbyid
+        type: string
+
+      - name: lastmodifieddate
+        sql: lastmodifieddate
+        type: string
+
+      - name: lastmodifiedbyid
+        sql: lastmodifiedbyid
+        type: string
+
+      - name: systemmodstamp
+        sql: systemmodstamp
+        type: string
+
+      - name: lastactivitydate
+        sql: lastactivitydate
+        type: string
+
+      - name: lastvieweddate
+        sql: lastvieweddate
+        type: string
+
+      - name: lastreferenceddate
+        sql: lastreferenceddate
+        type: string
+
+      - name: jigsaw
+        sql: jigsaw
+        type: string
+
+      - name: jigsawcompanyid
+        sql: jigsawcompanyid
+        type: string
+
+      - name: cleanstatus
+        sql: cleanstatus
+        type: string
+
+      - name: accountsource
+        sql: accountsource
+        type: string
+
+      - name: dunsnumber
+        sql: dunsnumber
+        type: string
+
+      - name: tradestyle
+        sql: tradestyle
+        type: string
+
+      - name: naicscode
+        sql: naicscode
+        type: string
+
+      - name: naicsdesc
+        sql: naicsdesc
+        type: string
+
+      - name: yearstarted
+        sql: yearstarted
+        type: string
+
+      - name: sicdesc
+        sql: sicdesc
+        type: string
+
+      - name: dandbcompanyid
+        sql: dandbcompanyid
+        type: string
+
+      - name: operatinghoursid
+        sql: operatinghoursid
+        type: string
+
+      - name: customerpriority_c
+        sql: customerpriority__c
+        type: string
+        title: Customerpriority  C
+
+      - name: sla_c
+        sql: sla__c
+        type: string
+        title: Sla  C
+
+      - name: active_c
+        sql: active__c
+        type: string
+        title: Active  C
+
+      - name: upsellopportunity_c
+        sql: upsellopportunity__c
+        type: string
+        title: Upsellopportunity  C
+
+      - name: slaserialnumber_c
+        sql: slaserialnumber__c
+        type: string
+        title: Slaserialnumber  C
+
+      - name: slaexpirationdate_c
+        sql: slaexpirationdate__c
+        type: string
+        title: Slaexpirationdate  C
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
+
